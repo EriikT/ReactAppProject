@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className='title'>
-        <h1>App title</h1>
+        <h1>Cyrus Testing</h1>
       </div>
       <div className='WordContainer'>
         <DataDisplay content={wordToDisplay} />
