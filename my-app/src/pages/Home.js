@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <div className='title'>
-                <h1>Cyrus Testing</h1>
+                <h1>Word of the Day</h1>
             </div>
             <div className='WordContainer'>
                 <DataDisplay content={wordToDisplay} />
