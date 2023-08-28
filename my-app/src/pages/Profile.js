@@ -1,11 +1,16 @@
 import React from "react"
 import './Profile.css'
+import Navbar from "../components/Navbar"
 
 
 export default function Profile() {
     return (
-        <>
-           <div className="Profile">
+        <> 
+            <div>
+                <Navbar/>
+            </div>
+           <div className="Profile-Container">
+
                 <div className="Profile__top">
                     <h1>Profile</h1>
                     <h3>Name</h3>
@@ -44,10 +49,7 @@ export default function Profile() {
                         </span>
                     </h4>
                 </div>
-            
-
-
-           </div>
+            </div>
         </>
     )
 }

@@ -16,7 +16,7 @@ export default function AppNavbar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto navigation-container">
-          <Nav.Link href="/login" className='nav-link'>Profile</Nav.Link>
+          <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
