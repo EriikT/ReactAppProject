@@ -1,0 +1,23 @@
+.Profile-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    transform: translateY(-50px);
+}
+
+.Profile__top {
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 25px;
+    color: white;
+    background-color: rgb(98, 73, 156);
+}
+
+.Profile_bottom {
+    width: 300px;
+    padding-left: 25px;
+    border-color: rgb(98, 73, 156);
+    border-style: solid;
+}
