@@ -7,14 +7,16 @@ import Navbar from "../components/Navbar"
 export default function Home() {
     return (
         <>
-            {/* <div className="">
+            <div>
                 <Navbar />
-            </div> */}
-            <div className='title'>
-                <h1>Word of the Day</h1>
             </div>
-            <div className='WordContainer'>
-                <DataDisplay />
+            <div className="word-container">
+                <div className='title-container'>
+                    <h1>Word of the Day</h1>
+                </div>
+                <div className='data-container'>
+                    <DataDisplay />
+                </div>
             </div>
         </>
     )

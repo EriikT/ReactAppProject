@@ -1,0 +1,19 @@
+.navbar-color{
+  background-color: rgb(98, 73, 156);
+}
+
+.logo{
+  margin-left: 10px;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.burger-button{
+  margin-right: 10px;
+}
+
+.navigation-container {
+  padding-right: 20px;
+}

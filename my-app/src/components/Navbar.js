@@ -1,14 +1,25 @@
-import React from "react"
-//import './Home.css';
+import React, { useState } from 'react';
+import './Navbar.css';
 
-export default function Navbar() {
-    return (
-        <>
-            <div className="navbar">
-                <div className="burger-menu">Burger Menu</div>
-                <div className="logo">Logo</div>
-                <div className="profile-button">Profile</div>
-            </div>
-        </>
-    )
+import { Nav, Navbar} from "react-bootstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
+export default function AppNavbar() {
+
+  return (
+    
+    <Navbar collapseOnSelect expand="lg" className="navbar-color" variant="dark">
+      <Navbar.Brand href="/login" className='logo'>
+        Logo
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ms-auto navigation-container">
+          <Nav.Link href="/login" className='nav-link'>Profile</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  
+  );
 }
