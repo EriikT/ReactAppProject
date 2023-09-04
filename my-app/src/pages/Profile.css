@@ -3,22 +3,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; 
-    transform: translateY(-50px);
+    min-height: 100vh;
+}
+
+.bet-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Profile__top {
-    width: 300px;
+
     padding-top: 10px;
-    padding-left: 25px;
+    padding-left: 10px;
     color: white;
     background-color: rgb(98, 73, 156);
 }
 
+.edit-p{
+    padding-left: 20px;
+}
+
 .Profile_bottom {
-    padding-top: 10px;
-    width: 300px;
-    padding-left: 25px;
     border-color: rgb(98, 73, 156);
     border-style: solid;
 }
