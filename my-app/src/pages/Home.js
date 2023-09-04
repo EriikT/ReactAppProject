@@ -10,12 +10,17 @@ export default function Home() {
             <div>
                 <Navbar />
             </div>
+            <form className="search-container">
+                <input className="search-bar" placeholder="search"></input>
+            </form>
             <div className="word-container">
-                <div className='title-container'>
-                    <h1>Word of the Day</h1>
-                </div>
-                <div className='data-container'>
-                    <DataDisplay />
+                <div className="info-box">
+                    <div className='title-container'>
+                        <h1 id="title">Word of the Day</h1>
+                    </div>
+                    <div className='data-container'>
+                        <DataDisplay />
+                    </div>
                 </div>
             </div>
         </>
