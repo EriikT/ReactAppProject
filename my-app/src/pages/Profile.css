@@ -20,10 +20,14 @@
     background-color: rgb(36, 95, 255);
 }
 
+.edit-p{
+    
+}
+
 .Profile_bottom {
     padding-top: 10px;
     width: 300px;
     padding-left: 25px;
-    background-color: rgb(36, 95, 255);
     border-style: solid;
+    border-color:  rgb(36, 95, 255);
 }
