@@ -1,19 +1,68 @@
+/* make sure items inside containers dont go over 300px width */
+/* make sure to give unique classNames to elements to avoid 
+  issues with already reserved class names in Bootsrap  */
+
+.search-container {
+  /* border: solid blue 5px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 41px;
+  width: 267px;
+}
+
+@media screen and (min-width: 600px) {
+  .search-bar {
+    width: 400px;
+  }
+}
+
 .word-container {
-  border: solid red 1px;
+  /* border: solid red 5px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.info-box {
+  border: solid rgb(36, 95, 255) 5px;
+  justify-content: center;
+  border-radius: 10px;
+  width: 300px;
+  
+}
+
+@media screen and (min-width: 600px) {
+  .info-box {
+    width: 450px;
+  }
+}
+
 .title-container {
-  margin-top: 20px;
-  border: solid black 1px;
+  margin-top: 40px;
+  /* border: solid black 1px; */
   text-align: center;
 }
 
+#title {
+  font-size: 20px ;
+}
+
 .data-container {
-  border: solid blue 1px;
+  margin-top: 30px;
+  /* border: solid blue 1px; */
   color: blue;
   text-align: center;
+  font-size: 50px;
 }
