@@ -16,6 +16,9 @@ export default function Login() {
                         <button className='login-button'>Sign In</button>
                     </Link>
                 </div>
+                <div className='create-account-container'>
+                    <p>Create an account</p>
+                </div>
             </div>
         </>
     )
