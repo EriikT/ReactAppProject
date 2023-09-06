@@ -23,6 +23,15 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className="button-container">
+                <button id="view-all-button">View All</button>
+            </div>
+            <div className="block-containers">
+                <button className="blocks">Button</button>
+                <button className="blocks">Button</button>
+                <button className="blocks">Button</button>
+                <button className="blocks">Button</button>    
+            </div>
         </>
     )
 }
