@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .bet-container{
@@ -13,21 +13,54 @@
 }
 
 .Profile__top {
-
     padding-top: 10px;
     padding-left: 10px;
-    color: white;
-    background-color: rgb(36, 95, 255);
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    color: black;
+    border-color:  rgb(36, 95, 255);
+}
+
+.Profile__top>h1{
+    padding-bottom: 10px;
 }
 
 .edit-p{
-    
+    display: flex;
+    align-items: center;
 }
+
+.Profile_img{
+    width:80px;
+    height:80px;
+}
+
+.eh4{
+    padding-left: 10px;
+}
+
+.Profile_bottom>h3 {
+    padding-left: 10px;
+}
+
+.Profile_bottom>h4 {
+    padding-left: 30px;
+}
+
+.material-symbols-outlined {
+    margin-left: auto;
+    margin-right: 0;
+}
+
 
 .Profile_bottom {
     padding-top: 10px;
+    padding-bottom: 10px;
     width: 300px;
-    padding-left: 25px;
-    border-style: solid;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: solid;
     border-color:  rgb(36, 95, 255);
+    
 }
