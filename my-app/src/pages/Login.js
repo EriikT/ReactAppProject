@@ -13,7 +13,7 @@ export default function Login() {
                 </div>
                 <div className=''>
                     <Link to="/Home">
-                        <button className='login-button'>Sign In</button>
+                        <button className='sign-in-button'>Sign In</button>
                     </Link>
                 </div>
                 <div className='create-account-container'>
