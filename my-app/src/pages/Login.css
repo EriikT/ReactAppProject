@@ -15,9 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* Spacing between logo and button */
+    margin-bottom: 20px; 
     border-radius: 5px;
     margin-bottom: 120px;
+    box-shadow: 8px 9px 8px rgba(0, 0, 0, 0.1);
   }
 
   .get-started-button{
@@ -31,12 +32,14 @@
     width: 280px;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 6px 5px 8px rgba(0, 0, 0, 0.1);
+    
   }
   
-  .login-button {
+  .sign-in-button {
     background-color: white;
     border: 1px solid rgb(36, 95, 255);
-    height: 43px;
+    height: 44px;
     font-size: 16px;
     color: black;
     padding: 10px 20px;
@@ -44,6 +47,7 @@
     width: 280px;
     border-radius: 5px;
     font-weight: 600;
+    box-shadow: 6px 5px 8px rgba(0, 0, 0, 0.1);
   }
 
   .create-account-container {
