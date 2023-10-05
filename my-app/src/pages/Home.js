@@ -2,6 +2,7 @@ import React from "react"
 import './Home.css';
 import DataDisplay from "../components/DataDisplay"
 import Navbar from "../components/Navbar"
+import ViewDefinition from "../components/ViewDefinition";
 import DateComponent from "../components/DateComponent";
 
 
@@ -27,6 +28,9 @@ export default function Home() {
                         <DataDisplay />
                     </div>
                 </div>
+            </div>
+            <div className="button-container">
+                <ViewDefinition/>
             </div>
             <div className="button-container">
                 <button id="view-all-button">View All</button>
