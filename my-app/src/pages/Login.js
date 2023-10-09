@@ -5,7 +5,7 @@ export default function Login() {
     return (
         <>
             <div className='login-container'>
-                <div className='login-logo'>LOGO</div>
+                <div className='login-logo'>WorkWord</div>
                 <div className=''>
                     <Link to="">
                         <button className='get-started-button'>Get Started</button>

@@ -11,7 +11,7 @@ export default function AppNavbar() {
     
     <Navbar collapseOnSelect expand="lg" className="navbar-color" variant="dark">
       <Navbar.Brand href="/login" className='logo'>
-        Logo
+        WorkWord
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
       <Navbar.Collapse id="responsive-navbar-nav">
