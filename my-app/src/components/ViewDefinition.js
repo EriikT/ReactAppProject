@@ -1,5 +1,6 @@
 import React from "react";
 import "./ViewDefinition.css"
+// import DataDisplay from "./DataDisplay";
 
 export default function ViewDefinition(){
     function togglePopup(){
@@ -13,6 +14,7 @@ export default function ViewDefinition(){
                     <div className="close-btn " onClick={togglePopup}>&times;</div>
                     <h1 className="fh">Word</h1>
                     <p>Definition</p>
+                    {/* <DataDisplay /> */}
                 </div>
             </div>
             <h3 className="sh3" onClick={togglePopup}>View Definition</h3>
