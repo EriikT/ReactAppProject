@@ -55,25 +55,6 @@ function Signup (){
                 </div>
 
             </div>
-            {/* <div className="popup">
-                <div className="popup_content">
-                    <h1 className='sh1'>Join Contor Today</h1>
-                    <form onSubmit={handleSubmit}>
-                        <div className='uu'>
-                            <p>Username</p>
-                            <input className="userI" placeholder='Enter Username'  
-                            onChange={e => setValues({...values, username: e.target.value})}/>
-                        </div>
-                        <div className='up'>
-                            <p>Password</p>
-                            <input className="userI" placeholder='Enter Password' 
-                            onChange={e => setValues({...values, password: e.target.value})}/>
-                        </div>
-                        <button type="submit" className='sb'>Sign Up</button>
-                    </form>
-                    <Link to='/LogIn' className="b-btn">Already a Contor user? Log in</Link>
-                </div>
-            </div> */}
         </>
     )
 } export default Signup
