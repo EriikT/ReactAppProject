@@ -17,7 +17,12 @@ export default function Login() {
                     </Link>
                 </div>
                 <div className='create-account-container'>
-                    <p>Create an account</p>
+                    <p>
+                    <Link to="/Signup">
+                        Create an account
+                    </Link>
+                    
+                    </p>
                 </div>
             </div>
         </>
