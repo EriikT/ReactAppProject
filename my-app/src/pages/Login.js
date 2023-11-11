@@ -19,6 +19,9 @@ export default function Login() {
                 <div className='terms-and-conditions-container'>
                     <p>Terms & Conditions</p>
                 </div>
+                <div className='create-account-container'>
+                    <p>Create an account</p>
+                </div>
             </div>
         </>
     )
