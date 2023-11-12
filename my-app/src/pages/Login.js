@@ -20,7 +20,12 @@ export default function Login() {
                     <p>Terms & Conditions</p>
                 </div>
                 <div className='create-account-container'>
-                    <p>Create an account</p>
+                    
+                    <p>
+                        <Link to="/Signup">
+                            Create an account
+                        </Link>
+                    </p>
                 </div>
             </div>
         </>
