@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Signup.css'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Navbar from "../components/Navbar";
 
 
 function Signup (){
@@ -34,6 +35,7 @@ function Signup (){
 
     return(
         <>
+            <Navbar/>
             <div className="container">
                 <div className="container_content">
                     <h1 className="sh1">WorkWord</h1>
