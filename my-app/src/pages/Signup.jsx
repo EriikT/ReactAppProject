@@ -52,7 +52,7 @@ function Signup (){
                         </div>
                         <button type="submit" className='sb'>Sign Up</button>
                     </form>
-                    <Link to='/LogIn' className="b-btn">Already a Contor user? Log in</Link>
+                    <Link to='/Login' className="b-btn">Already a WorkWord user? Log in</Link>
                     
                 </div>
 
