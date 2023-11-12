@@ -17,7 +17,7 @@ export default function ViewDefinition(){
                     {/* <DataDisplay /> */}
                 </div>
             </div>
-            <h3 className="sh3" onClick={togglePopup}>View Definition</h3>
+            <h3 className="vh3" onClick={togglePopup}>View Definition</h3>
 
         </>
     )

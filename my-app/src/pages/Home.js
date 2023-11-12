@@ -33,6 +33,7 @@ export default function Home() {
                 <ViewDefinition/>
             </div>
             <div className="button-container">
+            
                 <button id="view-all-button">View All</button>
             </div>
             <div className="block-containers">
