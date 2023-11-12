@@ -21,11 +21,11 @@ export default function Login() {
                 </div>
                 <div className='create-account-container'>
                     
-                    <p>
+                    {/* <p>
                         <Link to="/Signup">
                             Create an account
                         </Link>
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </>
