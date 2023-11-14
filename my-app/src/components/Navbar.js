@@ -17,6 +17,11 @@ export default function AppNavbar() {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto navigation-container">
           <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
+          <div>
+            <Nav.Link href="/SigninAccount" className='nav-link'>Signin</Nav.Link>
+            <Nav.Link href="/CreateAccount" className='nav-link'>Signup</Nav.Link>
+          </div>
+          
         </Nav>
       </Navbar.Collapse>
     </Navbar>
