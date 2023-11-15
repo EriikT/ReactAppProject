@@ -45,36 +45,30 @@ export default function AppNavbar() {
 
         <div>
             <Navbar collapseOnSelect expand="lg" className="navbar-color" variant="dark">
-                    <Navbar.Brand href="/login" className='logo'>
-                        WorkWord
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ms-auto navigation-container">
+                <Navbar.Brand href="/login" className='logo'>
+                    WorkWord
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto navigation-container">
                         <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
-                    <div>
                         <Nav.Link href="" className='nav-link'  onClick={handleDelete}>Logout</Nav.Link>
-                    </div>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-
         </div>
-
         :
         <div>
         <Navbar collapseOnSelect expand="lg" className="navbar-color" variant="dark">
-                    <Navbar.Brand href="/login" className='logo'>
-                        WorkWord
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ms-auto navigation-container">
-                        <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
-                    <div>
-                    <Nav.Link href="/SigninAccount" className='nav-link'>Signin</Nav.Link>
-                    <Nav.Link href="/CreateAccount" className='nav-link'>Signup</Nav.Link>
-                    </div>
+            <Navbar.Brand href="/login" className='logo'>
+                WorkWord
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" className='burger-button'/>
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="ms-auto navigation-container">
+                    <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
+                    {/* <Nav.Link href="SigninAccount" className='nav-link'>Signin</Nav.Link>
+                    <Nav.Link href="CreateAccount" className='nav-link'>Signup</Nav.Link> */}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
