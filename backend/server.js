@@ -12,7 +12,9 @@ const salt = 10;
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "https://react-app-project-nu.vercel.app", 
+    origin: "https://react-app-project-nu.vercel.app",
+    // To run on local machine
+    // origin: ["http://localhost:3000"], 
     methods: ["POST", "GET"],
     credentials: true,
     optionsSuccessStatus: 204,
