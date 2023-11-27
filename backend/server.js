@@ -12,11 +12,14 @@ const salt = 10;
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:3000"],
+    origin: "https://react-app-project-nu.vercel.app", 
     methods: ["POST", "GET"],
-    credentials: true
+    credentials: true,
+    optionsSuccessStatus: 204,
 }));
 app.use(cookieParser());
+
+app.options('*', cors());
 
 
 const pool = mysql.createPool({
