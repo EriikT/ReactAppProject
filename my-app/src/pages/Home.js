@@ -36,10 +36,10 @@ export default function Home() {
                     <button id="view-all-button">View All</button>
                 </div>
                 <div className="block-containers">
-                    <button className="blocks">Button</button>
-                    <button className="blocks">Button</button>
-                    <button className="blocks">Button</button>
-                    <button className="blocks">Button</button>
+                    <button className="blocks">About</button>
+                    <button className="blocks">FAQ</button>
+                    <button className="blocks">Blog</button>
+                    <button className="blocks">Contact</button>
                 </div>
             </div>
         </>

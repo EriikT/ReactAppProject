@@ -6,14 +6,14 @@ export default function Login() {
         <>
             <div className='login-container'>
                 <div className='login-logo'>WorkWord</div>
-                <div className='create-account-container'>
-                    <Link to="/CreateAccount">
-                        <button className='get-started-button'>Get Started</button>
+                <div className=''>
+                    <Link to="/Home">
+                        <button className='guest-button'>Guest</button>
                     </Link>
                 </div>
                 <div className=''>
-                    <Link to="/Home">
-                        <button className='sign-in-button'>Sign In</button>
+                    <Link to="/SigninAccount">
+                        <button className='login-button'>Log In</button>
                     </Link>
                 </div>
                 <div className='terms-and-conditions-container'>
