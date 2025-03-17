@@ -2,9 +2,13 @@ import React from "react"
 import './Profile.css'
 import Navbar from "../components/Navbar"
 import Button from "../lib/button";
+import { useAuth } from "../context/AuthContext";
 
 
 export default function Profile() {
+    const { user } = useAuth();
+    
+
     return (
         <> 
             <div>
@@ -22,7 +26,7 @@ export default function Profile() {
                             </div>
                             
                             <div className="eh4">
-                                <h4>Name</h4>
+                                <h4>Name:{user ? " \t" + user.displayName : " \t Guest"}</h4>
                                 <h4>View My Profile</h4>
                             </div>
 
