@@ -33,4 +33,17 @@ input {
     width: 150px;
     font-size: 17px;
     margin-left: 10px;
+
+}
+
+
+#google-sign-up-button {
+    background-color: rgb(36, 95, 255);
+    border: none;
+    height: 40px;
+    color: white;
+    width: 150px;
+    font-size: 14.5px;
+    margin-left: 10px;
+
 }

@@ -1,6 +1,7 @@
 import React from "react"
 import './Profile.css'
 import Navbar from "../components/Navbar"
+import Button from "../lib/button";
 
 
 export default function Profile() {
@@ -80,6 +81,12 @@ export default function Profile() {
                             chevron_right
                             </span>
                         </div>
+                        <div>
+                            <h4>
+                                <Button/>
+                            </h4>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

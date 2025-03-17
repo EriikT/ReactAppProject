@@ -3,6 +3,7 @@ import './Navbar.css';
 import { Nav, Navbar} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from 'axios';
+import Button from '../lib/button'
 
 
 export default function AppNavbar() {
@@ -67,6 +68,7 @@ export default function AppNavbar() {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto navigation-container">
                     <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
+                    <Nav.Link className='nav-link'><Button/></Nav.Link>
                     {/* <Nav.Link href="SigninAccount" className='nav-link'>Signin</Nav.Link>
                     <Nav.Link href="CreateAccount" className='nav-link'>Signup</Nav.Link> */}
                 </Nav>
