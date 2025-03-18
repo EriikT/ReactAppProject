@@ -1,9 +1,14 @@
 import React from "react"
 import './Profile.css'
 import Navbar from "../components/Navbar"
+import Button from "../lib/button";
+import { useAuth } from "../context/AuthContext";
 
 
 export default function Profile() {
+    const { user } = useAuth();
+    
+
     return (
         <> 
             <div>
@@ -21,8 +26,8 @@ export default function Profile() {
                             </div>
                             
                             <div className="eh4">
-                                <h4>Name</h4>
-                                <h4>View My Profile</h4>
+                                <h4>Name:{user ? "\t" + user.displayName : "\tGuest"}</h4>
+                                <h4>Email:{user ? "\t" + user.email : "\tGuest"}</h4>
                             </div>
 
                             <div className="seh4">
@@ -80,6 +85,12 @@ export default function Profile() {
                             chevron_right
                             </span>
                         </div>
+                        <div>
+                            <h4>
+                                <Button/>
+                            </h4>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

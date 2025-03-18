@@ -4,14 +4,19 @@ import DataDisplay from "../components/DataDisplay";
 import Navbar from "../components/Navbar";
 import ViewDefinition from "../components/ViewDefinition";
 import DateComponent from "../components/DateComponent";
+import { useAuth } from "../context/AuthContext";
 
 
 export default function Home() {
+    const { user } = useAuth();
 
     return (
         <>  
             <div>
                 <Navbar/>
+                <div className="welcome-banner">
+                    <h1>Welcome {user ? user.displayName : "Guest"} to WorkWord!</h1>
+                </div>
                 <form className="search-container">
                     <input className="search-bar" placeholder="search"></input>
                 </form>

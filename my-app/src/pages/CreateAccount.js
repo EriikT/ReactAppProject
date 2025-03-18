@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar"
 import './CreateAccount.css';
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Button from '../lib/button'
+
 
 export default function CreateAccount() {
 
@@ -57,7 +59,10 @@ export default function CreateAccount() {
           >
           </input>
           <br />
+    
           <button id='sign-up-button' type="submit">Sign Up</button>
+          <h2>or</h2>
+          <Button/>
         </form>
       </div>
     </>
