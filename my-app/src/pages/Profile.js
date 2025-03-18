@@ -26,8 +26,8 @@ export default function Profile() {
                             </div>
                             
                             <div className="eh4">
-                                <h4>Name:{user ? " \t" + user.displayName : " \t Guest"}</h4>
-                                <h4>View My Profile</h4>
+                                <h4>Name:{user ? "\t" + user.displayName : "\tGuest"}</h4>
+                                <h4>Email:{user ? "\t" + user.email : "\tGuest"}</h4>
                             </div>
 
                             <div className="seh4">
