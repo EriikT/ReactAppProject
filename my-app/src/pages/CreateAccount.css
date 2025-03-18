@@ -16,6 +16,7 @@
 h1{
     font-size: 20px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 input {
@@ -23,6 +24,7 @@ input {
     width: 90%;
     margin-left: 10px;
     height: 33px;
+    margin-top: 5px;
 }
 
 #sign-up-button {
@@ -33,17 +35,5 @@ input {
     width: 150px;
     font-size: 17px;
     margin-left: 10px;
-
-}
-
-
-#google-sign-up-button {
-    background-color: rgb(36, 95, 255);
-    border: none;
-    height: 40px;
-    color: white;
-    width: 150px;
-    font-size: 14.5px;
-    margin-left: 10px;
-
+  
 }
