@@ -18,6 +18,9 @@ function SigninAccount() {
         event.preventDefault();
 
         axios.post('http://localhost:8081/Login', values)
+        // update the Axios requests to use the correct URL of Heroku or AWS for backend host.
+        // axios.post('https://your-heroku-app.herokuapp.com/Login', values)
+        // axios.post('https://your-aws-backend-url/Login', values)
             .then((res) => {
                 if (res.data.Status === "Success") {
                     navigate('/Home');
