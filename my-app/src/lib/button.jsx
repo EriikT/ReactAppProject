@@ -41,7 +41,7 @@ const Button = () => {
                     onClick={handleClick}
                     disabled={isLoading} // Disable button while loading
                 >
-                    {isLoading ? "Loading..." : user ? "Sign Out" : "Sign In with Google"}
+                    {isLoading ? "Loading..." : user ? "Sign Out" : "Sign In With Google"}
                 </button>
             )}
         </>
