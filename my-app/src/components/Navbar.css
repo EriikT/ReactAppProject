@@ -17,3 +17,8 @@
 .navigation-container {
   padding-right: 20px;
 }
+
+.nav-link-container {
+  display: flex;
+  justify-content: space-between;
+}
