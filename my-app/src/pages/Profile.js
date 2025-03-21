@@ -78,13 +78,13 @@ export default function Profile() {
                             </span>
                         </div>
 
-                        <div>
+                        {/* <div>
                             <h4>Log Out</h4>
                             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
                             <span className="material-symbols-outlined">
                             chevron_right
                             </span>
-                        </div>
+                        </div> */}
                         <div>
                             <h4>
                                 <Button/>
