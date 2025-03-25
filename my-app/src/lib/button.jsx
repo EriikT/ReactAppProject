@@ -10,7 +10,7 @@ const Button = () => {
     const handleClick = async () => {
         if (isLoading) return; // Prevent multiple clicks
 
-        console.log("Button clicked. User:", user);
+        console.log("Button clicked. User:");
         setIsLoading(true); // Set loading state
 
         try {

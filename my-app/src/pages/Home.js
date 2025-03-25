@@ -20,7 +20,7 @@ export default function Home() {
                     const profile = await getUserProfile(user.uid);
                     setUserProfile(profile);
                 } catch (error) {
-                    console.error("Error fetching profile:", error);
+                    console.error("Error fetching profile:");
                 } finally {
                     setLoading(false);
                 }

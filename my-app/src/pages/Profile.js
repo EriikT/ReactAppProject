@@ -18,7 +18,7 @@ export default function Profile() {
                 try {
                     setLoading(true);
                     const profile = await getUserProfile(user.uid);
-                    console.log("Fetched profile:", profile); // Debug log
+                    // console.log("Fetched profile:", profile); // Debug log
                     setUserProfile(profile);
                 } catch (error) {
                     console.error("Error fetching profile:", error);
