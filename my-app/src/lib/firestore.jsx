@@ -11,7 +11,7 @@ export async function getUserProfile(userId) {
       if (docSnap.exists()) {
         return docSnap.data();
       } else {
-        console.log("No profile found for user:", userId);
+        console.log("No profile found for user:");
         return null;
       }
     } catch (error) {
