@@ -1,37 +1,31 @@
-import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import './SigninAccount.css'
-import Navbar from '../components/Navbar'
-import Button from '../lib/button'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import './SigninAccount.css';
+import Navbar from '../components/Navbar';
+import Button from '../lib/button';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 function SigninAccount() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+    const auth = getAuth();
 
-    const [values, setValues] = useState({
-        email: '',
-        password: ''
-    })
-
-    const navigate = useNavigate()
-    axios.defaults.withCredentials = true;
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
+        setError(''); // Clear previous errors
 
-        axios.post('http://localhost:8081/Login', values)
-        // update the Axios requests to use the correct URL of Heroku or AWS for backend host.
-        // axios.post('https://your-heroku-app.herokuapp.com/Login', values)
-        // axios.post('https://your-aws-backend-url/Login', values)
-            .then((res) => {
-                if (res.data.Status === "Success") {
-                    navigate('/Home');
-                } else {
-
-                    alert("Userame and Password not matched");
-                }
-            })
-            .catch((err) => {
-                console.error(err);
-            })
+        try {
+            const userCredential = await signInWithEmailAndPassword(auth, email, password);
+            const user = userCredential.user;
+            
+            // Successful login - redirect to home
+            navigate('/Home');
+        } catch (error) {
+            setError(error.message);
+            console.error("Login error:", error);
+        }
     }
 
     return (
@@ -40,25 +34,35 @@ function SigninAccount() {
             <div className='sign-in-container'>
                 <form className='sign-in-form-box' onSubmit={handleSubmit}>
                     <h1>Your Email</h1>
-                    <input className='input-box'
-                        onChange={e => setValues({ ...values, email: e.target.value })}>
-                    </input>
+                    <input 
+                        className='input-box'
+                        type="email"
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
+                        required
+                    />
                     <br />
                     <h1>Password</h1>
-                    <input className='input-box'
-                        onChange={e => setValues({ ...values, password: e.target.value })}>
-                    </input>
+                    <input 
+                        className='input-box'
+                        type="password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        required
+                    />
                     <br />
+                    {error && <div className="error-message">{error}</div>}
                     <button id='sign-in-button' type="submit">Sign In</button>
                     <h2>or</h2>
                     <Button/>
                     <h2></h2>
                     <Link to="/CreateAccount">
-                        {/* <button id='sign--up--button'>Sign Up</button> */}
-                        <p>Don't have a account? Sign Up!</p>
+                        <p>Don't have an account? Sign Up!</p>
                     </Link>
                 </form>
             </div>
         </>
     )
-} export default SigninAccount
+}
+
+export default SigninAccount;

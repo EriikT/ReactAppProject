@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-
+import { doc, getDoc, setDoc, collection, query, where, GeoPoint, serverTimestamp } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAFKdeSH1J1EH90Dm1x-5fWSeODtDmu74s",
@@ -42,3 +42,5 @@ export const signInWithGoogle = async () => {
       window.alert(e.message);
     }
   };
+
+
