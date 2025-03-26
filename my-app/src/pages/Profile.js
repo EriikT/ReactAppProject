@@ -55,8 +55,8 @@ export default function Profile() {
                             </div>
                             
                             <div className="eh4">
-                                <h4>Name: {displayName}</h4>
-                                <h4>Email: {user?.email || "Guest"}</h4>
+                                <h5>Name: {displayName}</h5>
+                                <h5>Email: {user?.email || "Guest"}</h5>
                             </div>
 
                             <div className="seh4">
