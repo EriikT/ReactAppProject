@@ -69,7 +69,7 @@ export default function AppNavbar() {
                 <Nav className="ms-auto navigation-container">
                 <div className='nav-link-container'>
                         <Nav.Link href="/Profile" className='nav-link'>Profile</Nav.Link>
-                        <Nav.Link className='nav-link'><Button/></Nav.Link>
+                        {/* <Nav.Link className='nav-link'><Button/></Nav.Link> */}
                 </div>
                     {/* <Nav.Link href="SigninAccount" className='nav-link'>Signin</Nav.Link>
                     <Nav.Link href="CreateAccount" className='nav-link'>Signup</Nav.Link> */}
